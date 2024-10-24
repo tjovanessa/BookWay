@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewerUser">
+	<children>
+		<AnchorPane prefHeight="360.0" prefWidth="640.0" style="-fx-background-color: #cae6f2;">
+         <children>
+            <Button fx:id="rentUser" layoutX="511.0" layoutY="311.0" mnemonicParsing="false" onAction="#switchRentBook" prefHeight="28.0" prefWidth="110.0" style="-fx-background-color: #ffffff; -fx-border-color: #38688b;" text="Rent" textAlignment="CENTER" textFill="#38688b" textOverrun="CLIP">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font></Button>
+            <Label layoutX="277.0" layoutY="257.0" text="Payment Method:" textFill="#38688b">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableuser" layoutX="12.0" layoutY="64.0" prefHeight="171.0" prefWidth="619.0">
+              <columns>
+                <TableColumn fx:id="idviewuser" prefWidth="31.33334255218506" text="ID" />
+                <TableColumn fx:id="titleviewuser" prefWidth="267.3332824707031" text="TITLE" />
+                  <TableColumn fx:id="authorviewuser" prefWidth="155.3333740234375" text="AUTHOR" />
+                  <TableColumn fx:id="yearviewuser" prefWidth="73.99993896484375" text="YEAR" />
+                  <TableColumn fx:id="priceviewuser" minWidth="6.0" prefWidth="88.0" text="PRICE" />
+              </columns>
+            </TableView>
+            <Label layoutX="228.0" layoutY="14.0" prefHeight="42.0" prefWidth="184.0" text="Rent Book" textFill="#38688b">
+               <font>
+                  <Font name="SansSerif Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="239.0" prefHeight="25.0" prefWidth="110.0" text="ID Book:" textFill="#38688b">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bookidrent" layoutX="14.0" layoutY="263.0" prefHeight="29.0" prefWidth="213.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="299.0" text="Phone Number:" textFill="#38688b">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pnumberrent" layoutX="14.0" layoutY="318.0" prefHeight="29.0" prefWidth="213.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <VBox fx:id="boxpayment" layoutX="277.0" layoutY="277.0" prefHeight="74.0" prefWidth="117.0">
+               <children>
+                  <RadioButton fx:id="paymentdana" mnemonicParsing="false" selected="true" text="DANA">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="payment" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="paymentovo" mnemonicParsing="false" text="OVO" toggleGroup="$payment" />
+                  <RadioButton fx:id="paymentgopay" mnemonicParsing="false" text="GoPay" toggleGroup="$payment" />
+                  <RadioButton fx:id="paymentlinkaja" mnemonicParsing="false" text="LinkAja" toggleGroup="$payment" />
+               </children>
+            </VBox>
+            <Button fx:id="cancelrentuser" layoutX="421.0" layoutY="311.0" mnemonicParsing="false" onAction="#switchUserMenu" prefHeight="28.0" prefWidth="75.0" style="-fx-background-color: #ffffff; -fx-border-color: #38688b;" text="Back" textFill="#38688b">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+	 
+      
+	</children>
+</AnchorPane>

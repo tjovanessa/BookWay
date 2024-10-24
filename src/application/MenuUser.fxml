@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane prefHeight="360.0" prefWidth="640.0" style="-fx-background-color: #cae6f2;">
+         <children>
+            <Button fx:id="logoutuser" layoutX="45.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchSceneMain" prefHeight="28.0" prefWidth="79.0" style="-fx-background-color: #ffffff; -fx-border-color: #38688b;" text="Logout" textFill="#38688b">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="label1" layoutX="479.0" layoutY="19.0" prefHeight="25.0" prefWidth="140.0" text="You are logged in as USER" textFill="#848484">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="rentbookButton" layoutX="160.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchRentBook" prefHeight="53.0" prefWidth="319.0" style="-fx-background-color: #38688b; -fx-border-width: 4; -fx-border-color: #ffffff;" text="Rent a Book" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="returnbookButton" layoutX="160.0" layoutY="231.0" mnemonicParsing="false" onAction="#switchReturnBook" prefHeight="53.0" prefWidth="319.0" style="-fx-background-color: #38688b; -fx-border-width: 4; -fx-border-color: #ffffff;" text="Return a Book" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewbookButton" layoutX="160.0" layoutY="72.0" mnemonicParsing="false" onAction="#switchViewBooksUser" prefHeight="53.0" prefWidth="319.0" style="-fx-background-color: #38688b; -fx-border-color: #ffffff; -fx-border-width: 4;" text="View Books" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="27.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
